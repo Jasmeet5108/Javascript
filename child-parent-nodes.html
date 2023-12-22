@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child, Parent Nodes</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .box {
+            height: 45px;
+            width: 56px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;                 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+
+    <script>
+        console.log("Hello World");
+        //     let cont = document.body.childNodes[1]
+        // undefined
+        // cont
+        // <div class=​"container">​…​</div>
+        // cont.firstChild
+        // #text
+        // cont.firstElementChild
+        // <div class=​"box">​Box1​</div>
+        // cont.lastElementChild
+        // <div class=​"box">​Box5​</div>
+        // cont.lastElementChild.style.color
+        // ''
+        // cont.lastElementChild.style.color = "red
+        // VM617:1 Uncaught SyntaxError: Invalid or unexpected token
+        // cont.lastElementChild.style.color = "red"
+        // 'red'
+        // cont.lastElementChild.parentElement
+        // <div class=​"container">​…​</div>
+        // document.body.firstElementChild
+        // <div class=​"container">​…​</div>
+        // document.body.firstElementChild.childNodes
+        // NodeList(11) [text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]
+    </script>
+</body>
+
+</html>
