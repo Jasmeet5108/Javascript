@@ -11,7 +11,7 @@ console.log("Hello World");
         // <div class="box">Box5</div>
          cont.lastElementChild.style.color
         // ''
-         cont.lastElementChild.style.color = "red
+         cont.lastElementChild.style.color = "red"
         // VM617:1 Uncaught SyntaxError: Invalid or unexpected token
          cont.lastElementChild.style.color = "red"
         // 'red'
