@@ -1,5 +1,4 @@
 let age = 18;
-let grace = 35;
 
 if (age > 10) {
     console.log("You can drive");
