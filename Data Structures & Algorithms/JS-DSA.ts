@@ -50,10 +50,10 @@ const arr4 = [34, 22, 625, 183, 1, 34, 67, 77, 24, 21, 121, 100];
 let frequency = {};
 arr4.forEach((num) => (frequency[num] = (frequency[num] || 0) + 1));
 let maxOccur = 0;
-let numOfTimes = null;
+let numOfTimes = 0;
 for (const num in frequency) {
   if (Object.prototype.hasOwnProperty.call(frequency, num)) {
-    if (frequency[num] > maxOccur) {
+    if (frequency[num] > numOfTimes) {
       numOfTimes = frequency[num];
       maxOccur = Number(num);
     }
