@@ -37,6 +37,7 @@ let smallest = Infinity;
 let second_smallest = Infinity;
 for (let i = 0; i < arr3.length; i++) {
   if (arr3[i] < smallest) {
+    second_smallest = smallest;
     smallest = arr3[i];
   } else if (arr3[i] > smallest && arr3[i] < second_smallest) {
     second_smallest = arr3[i];
