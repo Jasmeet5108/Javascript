@@ -1,3 +1,28 @@
+// Promises
+const prom1 = new Promise((resolve, reject) => {
+    let randNum = Math.random()
+    if (randNum > 0.5) {
+        resolve("First Promise Resolved")
+    }
+    else {
+        reject("First Promise Rejected")
+    }
+})
+
+const prom2 = new Promise((resolve, reject) => {
+    let randNum = Math.random()
+    if (randNum > 0.5) {
+        resolve("Second Promise Resolved")
+    }
+    else {
+        reject("Second Promise Rejected")
+    }
+})
+
+// prom1.then((success) => console.log(`Hogya ${success}`)).catch((err) => console.log(`Nahi hua ${err}`))
+let prom3 = Promise.all([prom1, prom2])
+prom3.then(success => console.log(`All => ${success}`)).catch(err => console.log(`Error => ${err}`))
+
 // IIFE => Immediately Invoked Function Expression
 
 async function sleep() {

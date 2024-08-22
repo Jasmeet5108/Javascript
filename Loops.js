@@ -9,12 +9,12 @@ for (let i = 0; i <= 10; i++) {
 let obj = {
     name: "Jasmeet Singh",
     role: "Developer",
-    company:"Reliance corp"
+    company: "Reliance corp"
 }
 
 // for in loop
 for (const key in obj) {
-        console.log(key)
+    console.log(key)
 }
 
 // for of loop
